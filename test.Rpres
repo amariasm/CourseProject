@@ -21,7 +21,7 @@ ShinyApp project - Definitions
 
 Example Results:
 ========================================================
-
+<small style="font-size:.5em">
  n=1000, m=0, sd=1, Var at 95%, K=10000
 ```{r, echo=FALSE}
 n<-1000
@@ -36,9 +36,9 @@ dist <- rnorm(n)
  print(var)
 
 ```
-
+</small>
 ***
-
+<small style="font-size:.5em">
 n= 1000, m=2, sd=1, Var at 95%, K=10000
 
 ```{r, echo=FALSE}
@@ -54,7 +54,7 @@ dist <- rnorm(n)
  print(var)
 
 ```
-
+</small>
 Code References
 ========================================================
 Readme.md, ui.R, and  Server.R Code in my github repository
