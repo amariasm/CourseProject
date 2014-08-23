@@ -14,10 +14,15 @@ The ShinyApp generates random numbers according to a normal distribution to calc
 
 ShinyApp project - Definitions
 ========================================================
-- Normal Distribution: In probability theory, a probability density function (pdf), or density of a continuous random variable, is a function that describes the relative likelihood for this random variable to take on a given value.
 ![alt text](normald.png)
+***
+<small style="font-size:.7em">
+- Normal Distribution: In probability theory, a probability density function (pdf), or density of a continuous random variable, is a function that describes the relative likelihood for this random variable to take on a given value.
 
-- Value at Risk : http://en.wikipedia.org/wiki/Value_at_risk#VaR_risk_management
+- Value at Risk : (VaR) is a widely used risk measure of the risk of loss on a specific portfolio of financial assets.For example, if a portfolio of stocks has a one-day 5% VaR of $1 million, there is a 0.05 probability that the portfolio will fall in value by more than $1 million over a one day period if there is no trading
+
+</small>
+
 
 Example Results:
 ========================================================
