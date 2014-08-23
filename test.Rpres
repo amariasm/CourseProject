@@ -1,0 +1,60 @@
+Course Project RPresentation - Developing Data Products
+========================================================
+author: Antonia M
+date: `r date()`
+
+ShinyApp project
+========================================================
+
+The ShinyApp generates random numbers according to a normal distribution to calculate the Value at Risk. The input variables are: 
+
+- Number of random variables (n) to generate a Normal Distribution
+- Mean (m) and Standar Deviation (sd)
+- Input Value at Risk : confidencial level (var) and Stock of capital-K (WO)
+
+
+Example Results:
+========================================================
+
+ n=1000, m=0, sd=1, Var at 95%, K=10000
+```{r, echo=FALSE}
+n<-1000
+dist <- rnorm(n)
+     
+    hist(dist,
+         main="Histogram of random variables",
+         ylab="Frecuency",col="blue",xlab="x")
+ q = 0 + 1*qnorm(1-0.95)
+    var = abs(q*10000)  
+ summary(dist)
+ print(var)
+
+```
+
+***
+
+n= 1000, m=2, sd=1, Var at 95%, K=10000
+
+```{r, echo=FALSE}
+n<-1000
+dist <- rnorm(n)
+     
+    hist(dist,
+         main="Histogram of random variables",
+         ylab="Frecuency",col="blue",xlab="x")
+ q = 2 + 1*qnorm(1-0.95)
+    var = abs(q*10000)  
+ summary(dist)
+ print(var)
+
+```
+
+Code References
+========================================================
+Readme.md, ui.R, and  Server.R Code in my github repository
+
+https://github.com/amariasm/CourseProject/blob/master/README.md
+https://github.com/amariasm/CourseProject/blob/master/ui.R
+https://github.com/amariasm/CourseProject/blob/master/server.R
+
+.Rpres Code in my github repository
